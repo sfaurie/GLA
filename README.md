@@ -1,0 +1,2 @@
+# GLA
+Genome Linguistic Approach
