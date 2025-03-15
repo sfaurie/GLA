@@ -1,0 +1,27 @@
+#To perform an HTTP GET request in Python
+
+import requests
+
+# Define the URL
+url = "https://api.example.com/data"
+
+# Send the GET request
+# response = requests.get(url)
+
+# Check the response status
+if response.status_code == 200:
+    # Parse the response content
+    data = response.json()  
+#   If the response is in JSON format
+    print(data)
+else:
+    print(f"Request failed with status code
+ {response.status_code}")
+```
+### Explanation:
+1. **Install `requests`:** If you don’t already have it installed, you can use the command `pip install requests` in your terminal or command prompt.
+2. **HTTP GET Request:** The `requests.get(url)` function sends a GET request to the specified URL.
+3. **Response Handling:** You can access the response's content using `.text`, `.json()` (for JSON data), or `.content` (for binary data).
+4. **Status Code:** Always check `response.status_code` to ensure the request was successful (e.g., `200 OK`).
+If you're looking to customize headers, handle parameters, or use authentication, let me know—I can expand on this further!
+´´´
